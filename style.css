@@ -4,10 +4,9 @@
     font-family: 'kumbh sans', sans-serif;
     box-sizing: border-box;
 }
-html,body {
-    margin: 0;
-    padding: 0;
+body {
     width: 100%;
+    height: 100%;
 }
 p::selection {
     color: white;
@@ -102,6 +101,7 @@ p::selection {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .main-container {
     display: grid;
@@ -112,6 +112,7 @@ p::selection {
     height: auto;
     z-index: 1;
     width: 100%;
+    height: 100%;
     max-width: 1300px;
     padding: 10px 50px;
 }
@@ -219,7 +220,7 @@ p::selection {
     position: relative;
     border-radius: 12px;
     width: 23%;
-    height: 25rem;
+    aspect-ratio: 3/4;
     overflow: hidden;
 }
 .services-card::before {
@@ -361,8 +362,7 @@ p::selection {
 }
 @media (max-width: 1024px) {
     .services-card {
-        width: 25%;
-      height: 20rem;  
+        width: 25%;  
     }
     .services-overlay h2 {
         font-size: 1.3;
@@ -452,6 +452,9 @@ p::selection {
     ;
 
 }
+.main {
+    height: 50vh;
+}
     .main-content {
         padding: 0 20px;
         margin-bottom: 5rem;
@@ -486,9 +489,7 @@ p::selection {
     .main-content {
         margin-bottom: 3rem;
     }
-    .services-card {
-        height: 20rem;
-    }
+    
     .footer-links {
         padding-top: 2rem;
     }
@@ -508,6 +509,7 @@ p::selection {
 @media screen and (max-width: 768px) {
    .main {
     max-width: 100%;
+    height: 100vh;
    }
     .main-container {
         padding: 0 10px;
@@ -516,7 +518,7 @@ p::selection {
      
     .main-content {
         text-align: center;
-        margin-bottom: 2rem;
+        
     }
     .main-content h1 {
         font-size: 2.5rem;
@@ -556,6 +558,7 @@ p::selection {
 }
 @media screen and (max-width: 480px) {
     .main {
+        height: 100vh;
     padding: 10px auto;
     }
     .main-content {
@@ -566,11 +569,11 @@ p::selection {
         margin-top: 1rem;
     }
     .main-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
 
     }
     .main-content p {
-        margin-top: 1rem;
+        margin-top: 0.75rem;
         font-size: 1rem;
     }
     .main-btn {
@@ -585,10 +588,10 @@ p::selection {
         font-size: 1.5rem;
     }
     .services-overlay h2{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .services-overlay p {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .footer-links-wrapper {
         display: flex;
