@@ -220,7 +220,7 @@ p::selection {
     position: relative;
     border-radius: 12px;
     width: 23%;
-    aspect-ratio: 3/4;
+    aspect-ratio: 3/3.5;
     overflow: hidden;
 }
 .services-card::before {
@@ -291,11 +291,15 @@ p::selection {
     width: 100%;
     max-width: 1000px;
     display: flex;
+    gap: 3rem;
     justify-content: center;
 }
 .footer-links-wrapper {
     display: flex;
+    justify-content: flex-start;
     gap: 3rem;
+    flex: 1;
+    align-items: flex-start;
 }
 .footer-link-items {
     display: flex;
@@ -359,6 +363,24 @@ p::selection {
         transition: all 0.3s ease;
     }
 
+}
+@media (max-width: 1200px) {
+    .main-content h1 {
+        font-size: 3rem;
+
+    }
+    .main-content h2 {
+        font-size: 3rem;
+    }
+    .main-content p {
+        font-size: 1.5rem;
+    }
+    .footer-links {
+        gap: 2rem;
+    }
+    .footer-links-wrapper {
+        gap: 2rem;
+    }
 }
 @media (max-width: 1024px) {
     .services-card {
@@ -514,10 +536,14 @@ p::selection {
     .main-container {
         padding: 0 10px;
         grid-template-columns: 1fr;
+        align-items: start;
+        justify-content: center;
+        gap: 2rem;
      }
      
     .main-content {
         text-align: center;
+        margin-bottom: 0;
         
     }
     .main-content h1 {
